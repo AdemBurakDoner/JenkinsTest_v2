@@ -6,7 +6,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "http://ec2-52-18-109-136.eu-west-1.compute.amazonaws.com",
+          "Host": "host.docker.internal",
           "Port": 4000
         }
       ],
@@ -20,7 +20,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "http://ec2-52-18-109-136.eu-west-1.compute.amazonaws.com",
+          "Host": "host.docker.internal",
           "Port": 5000
         }
       ],
