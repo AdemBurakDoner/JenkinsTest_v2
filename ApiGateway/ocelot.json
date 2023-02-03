@@ -6,13 +6,12 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "host.docker.internal",
+          "Host": "c_order_api",
           "Port": 4000
         }
       ],
       "UpstreamPathTemplate": "/order/{everything}",
       "UpstreamHttpMethod": [ "Get" ],
-      "UpstreamScheme": "http"
     },
 
     {
@@ -20,13 +19,12 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "host.docker.internal",
+          "Host": "c_payment_api",
           "Port": 5000
         }
       ],
       "UpstreamPathTemplate": "/payment/{everything}",
       "UpstreamHttpMethod": [ "Get" ],
-      "UpstreamScheme": "http"
     }
 
   ]

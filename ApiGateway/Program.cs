@@ -4,7 +4,7 @@ using Ocelot.Middleware;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.WebHost.ConfigureKestrel(options => options.ListenAnyIP(3000));
+builder.WebHost.ConfigureKestrel(options => options.ListenAnyIP(80));
 
 IConfiguration configuration = new ConfigurationBuilder()
                             .AddJsonFile("ocelot.json", optional: false, reloadOnChange: true)
