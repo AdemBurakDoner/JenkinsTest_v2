@@ -6,7 +6,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "c_order_api",
+          "Host": "http://ec2-52-18-109-136.eu-west-1.compute.amazonaws.com",
           "Port": 4000
         }
       ],
@@ -20,7 +20,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "c_payment_api",
+          "Host": "http://ec2-52-18-109-136.eu-west-1.compute.amazonaws.com",
           "Port": 5000
         }
       ],
