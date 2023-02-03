@@ -8,7 +8,6 @@ builder.WebHost.ConfigureKestrel(options => options.ListenAnyIP(3000));
 
 IConfiguration configuration = new ConfigurationBuilder()
                             .AddJsonFile("ocelot.json", optional: false, reloadOnChange: true)
-                            .AddJsonFile($"ocelot.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json", optional: true)
                             .Build();
 builder.Services.AddOcelot(configuration);
 
