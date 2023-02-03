@@ -10,8 +10,8 @@
           "Port": 4000
         }
       ],
-      "UpstreamPathTemplate": "/order/{everything}",
-      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/api/order/{everything}",
+      "UpstreamHttpMethod": [ "Get" ]
     },
 
     {
@@ -23,8 +23,8 @@
           "Port": 5000
         }
       ],
-      "UpstreamPathTemplate": "/payment/{everything}",
-      "UpstreamHttpMethod": [ "Get" ],
+      "UpstreamPathTemplate": "/api/payment/{everything}",
+      "UpstreamHttpMethod": [ "Get" ]
     }
 
   ]
