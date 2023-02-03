@@ -11,23 +11,28 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Order", "Order", "{36AEB17B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payment", "Payment", "{B8755642-1360-4FAB-BBDF-052B76EB9940}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{BF22B930-4AAB-4B81-937B-2188542F7979}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{BF22B930-4AAB-4B81-937B-2188542F7979}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Api", "Services\Order\Order.Api\Order.Api.csproj", "{5E8D34C2-AF0F-4903-9276-E770DC194FD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Order.Api", "Services\Order\Order.Api\Order.Api.csproj", "{5E8D34C2-AF0F-4903-9276-E770DC194FD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Api.Infrastructure", "Services\Order\Order.Api.Infrastructure\Order.Api.Infrastructure.csproj", "{FB98FAA8-C5D6-481A-8892-0822C5249C84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Order.Api.Infrastructure", "Services\Order\Order.Api.Infrastructure\Order.Api.Infrastructure.csproj", "{FB98FAA8-C5D6-481A-8892-0822C5249C84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Api.Models", "Services\Order\Order.Api.Models\Order.Api.Models.csproj", "{3E7E2FE2-6CDB-4A62-96EF-D83973D150AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Order.Api.Models", "Services\Order\Order.Api.Models\Order.Api.Models.csproj", "{3E7E2FE2-6CDB-4A62-96EF-D83973D150AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Api.Service", "Services\Order\Order.Api.Service\Order.Api.Service.csproj", "{3F73087B-9ECD-4915-BD0B-C6CFCFB88845}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Order.Api.Service", "Services\Order\Order.Api.Service\Order.Api.Service.csproj", "{3F73087B-9ECD-4915-BD0B-C6CFCFB88845}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.Api", "Services\Payment\Payment.Api\Payment.Api.csproj", "{45E3FFAE-DED7-4278-AA20-B06CEC53BC47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Payment.Api", "Services\Payment\Payment.Api\Payment.Api.csproj", "{45E3FFAE-DED7-4278-AA20-B06CEC53BC47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.Api.Infrastructure", "Services\Payment\Payment.Api.Infrastructure\Payment.Api.Infrastructure.csproj", "{996A4FA6-25DE-4A71-8230-FAE13B454E2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Payment.Api.Infrastructure", "Services\Payment\Payment.Api.Infrastructure\Payment.Api.Infrastructure.csproj", "{996A4FA6-25DE-4A71-8230-FAE13B454E2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.Api.Models", "Services\Payment\Payment.Api.Models\Payment.Api.Models.csproj", "{87F3B07F-9297-4EAF-B85A-08D64DD859BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Payment.Api.Models", "Services\Payment\Payment.Api.Models\Payment.Api.Models.csproj", "{87F3B07F-9297-4EAF-B85A-08D64DD859BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.Api.Services", "Services\Payment\Payment.Api.Services\Payment.Api.Services.csproj", "{692400C4-A7E3-4150-9B44-A0F85F857AA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Payment.Api.Services", "Services\Payment\Payment.Api.Services\Payment.Api.Services.csproj", "{692400C4-A7E3-4150-9B44-A0F85F857AA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{739C3903-F80F-4EBB-95FC-FDDFD21276C1}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

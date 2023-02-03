@@ -8,9 +8,6 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["Services/Payment/Payment.Api/Payment.Api.csproj", "Services/Payment/Payment.Api/"]
-COPY ["Services/Payment/Payment.Api.Services/Payment.Api.Services.csproj", "Services/Payment/Payment.Api.Services/"]
-COPY ["Services/Payment/Payment.Api.Infrastructure/Payment.Api.Infrastructure.csproj", "Services/Payment/Payment.Api.Infrastructure/"]
-COPY ["Services/Payment/Payment.Api.Models/Payment.Api.Models.csproj", "Services/Payment/Payment.Api.Models/"]
 RUN dotnet restore "Services/Payment/Payment.Api/Payment.Api.csproj"
 COPY . .
 WORKDIR "/src/Services/Payment/Payment.Api"

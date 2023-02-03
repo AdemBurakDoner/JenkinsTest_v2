@@ -3,30 +3,30 @@
 
     {
       "DownstreamPathTemplate": "/api/order/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 44339
+          "Host": "c_order_api",
+          "Port": 4000
         }
       ],
       "UpstreamPathTemplate": "/api/order/{everything}",
       "UpstreamHttpMethod": [ "Get" ],
-      "UpstreamScheme": "https"
+      "UpstreamScheme": "http"
     },
 
     {
       "DownstreamPathTemplate": "/api/payment/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 44378
+          "Host": "c_payment_api",
+          "Port": 5000
         }
       ],
       "UpstreamPathTemplate": "/api/payment/{everything}",
       "UpstreamHttpMethod": [ "Get" ],
-      "UpstreamScheme": "https"
+      "UpstreamScheme": "http"
     }
 
   ]

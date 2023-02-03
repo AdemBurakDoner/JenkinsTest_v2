@@ -1,0 +1,44 @@
+version: '3.1'
+
+services:
+  s_api_gateway:
+    container_name: c_api_gateway
+    image: abd/apigateway
+    build:
+      context: .
+      dockerfile: ApiGateway/Dockerfile
+    ports:
+      - 3000:3000
+    networks:
+      - micro_net
+
+  s_order_api:
+    container_name: c_order_api
+    image: abd/orderapi
+    build:
+      context: .
+      dockerfile: Services/Order/Order.Api/Dockerfile
+    ports:
+      - 4000:4000
+    networks:
+      - int_net
+
+  s_payment_api:
+    container_name: c_payment_api
+    image: abd/paymentapi
+    build:
+      context: .
+      dockerfile: Services/Payment/Payment.Api/Dockerfile
+    ports:
+      - 5000:5000
+    networks:
+      - int_net
+
+
+networks:
+  int_net:
+    driver: overlay
+    internal: true
+  micro_net:
+    driver: bridge
+   
