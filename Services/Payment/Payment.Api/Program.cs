@@ -1,5 +1,5 @@
-using Order.Api.Infrastructure;
-using Order.Api.Service;
+using Payment.Api.Infrastructure;
+using Payment.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IPaymentService, PaymentService>();
 
 var app = builder.Build();
 
