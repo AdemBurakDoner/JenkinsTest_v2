@@ -11,6 +11,7 @@ services:
       - 3000:3000
     networks:
       - micro_net
+      - int_net
 
   s_order_api:
     container_name: c_order_api
@@ -21,7 +22,7 @@ services:
     ports:
       - 4000:4000
     networks:
-      - micro_net
+      - int_net
 
   s_payment_api:
     container_name: c_payment_api
@@ -32,7 +33,7 @@ services:
     ports:
       - 5000:5000
     networks:
-      - micro_net
+      - int_net
 
 
 networks:
